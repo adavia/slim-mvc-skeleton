@@ -1,0 +1,10 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+    <h1>This is the index page</h1>
+    <ul>
+        {% for post in posts %}
+            <li>{{post.title}}</li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
